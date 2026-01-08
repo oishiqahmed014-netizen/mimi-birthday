@@ -234,7 +234,17 @@ body {
   height: 100%;
   pointer-events: none;
   overflow: hidden;
-  z-index: 0;
+  z-index: 2; /* FIX: visible on mobile */
+}
+/* CONTENT ABOVE HEARTS */
+.page-one,
+.page-birthday,
+.page-letter,
+.page-links {
+  position: relative;
+  z-index: 3;
+}
+
 }
 
 .heart {
@@ -255,3 +265,4 @@ body {
     opacity: 0;
   }
 }
+
